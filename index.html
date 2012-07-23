@@ -1,0 +1,94 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/index.css">
+  </head>
+  <body>
+    
+    <div class="template">
+      <h1>jquery.mjd.optionFilter.js</h1>
+      <div class="option-filter-example-1">
+        <h2>Default - With no pre selected values on page load</h2>
+        <select class="option-filter-select" name="Country" data-option-filter-id="0">
+          <option class="option-filter-placeholder" value="">Select a Country</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States">United States</option>
+        </select>
+
+        <select class="option-filter-select" name="State" data-option-filter-id="1">
+          <option class="option-filter-placeholder" value="">Select a State/County</option>
+          <option class="United-States" value="New York">New York</option>
+          <option class="United-States" value="New Jersey">New Jersey</option>
+          <option class="United-States" value="Arizona">Arizona</option>
+          <option class="United-Kingdom" value="Greater London">Greater London</option>
+          <option class="United-Kingdom" value="Essex">Essex</option>           
+        </select>
+
+        <select class="option-filter-select" name="City" data-option-filter-id="2">
+          <option class="option-filter-placeholder" value="">Select a City/Town</option>
+          <option class="United-States New-York" value="New York">New York City</option>
+          <option class="United-States Arizona" value="Tuscon">Tuscon</option>
+          <option class="United-States Arizona" value="Phoenix">Phoenix</option>
+          <option class="United-States New-Jersey" value="Guido Beach">Guido Beach?</option>
+          <option class="United-Kingdom Essex" value="Rayleigh">Rayleigh</option>
+          <option class="United-Kingdom Essex" value="Southend On Sea">Southend On Sea</option>
+          <option class="United-Kingdom Greater-London" value="Mayfair">Mayfair</option>
+          <option class="United-Kingdom Greater-London" value="Herne Hill">Herne Hill</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="option-filter-example-2">
+        <h2>With a "selected" attribute on page load</h2>
+        <select class="option-filter-select" name="Country" data-option-filter-id="0">
+          <option class="option-filter-placeholder" value="">Select a Country</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States">United States</option>
+        </select>
+
+        <select class="option-filter-select" name="State" data-option-filter-id="1">
+          <option class="option-filter-placeholder" value="">Select a State/County</option>
+          <option class="United-States" value="New York">New York</option>
+          <option class="United-States" value="New Jersey">New Jersey</option>
+          <option class="United-States" value="Arizona">Arizona</option>
+          <option class="United-Kingdom" value="Greater London">Greater London</option>
+          <option class="United-Kingdom" value="Essex">Essex</option>           
+        </select>
+
+        <select class="option-filter-select" name="City" data-option-filter-id="2">
+          <option class="option-filter-placeholder" value="">Select a City/Town</option>
+          <option class="United-States New-York" selected="selected" value="New York">New York City</option>
+          <option class="United-States Arizona" value="Tuscon">Tuscon</option>
+          <option class="United-States Arizona" value="Phoenix">Phoenix</option>
+          <option class="United-States New-Jersey" value="Guido Beach">Guido Beach?</option>
+          <option class="United-Kingdom Essex" value="Rayleigh">Rayleigh</option>
+          <option class="United-Kingdom Essex" value="Southend On Sea">Southend On Sea</option>
+          <option class="United-Kingdom Greater-London" value="Mayfair">Mayfair</option>
+          <option class="United-Kingdom Greater-London" value="Herne Hill">Herne Hill</option>
+        </select>
+      </div>
+    </div>
+
+    <script src="javascript/lib/jquery-1.7.2.js"></script>
+    <script src="javascript/lib/jquery.ui.widget.js"></script>
+    <script src="javascript/jquery.mjd.optionFilter.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.option-filter-example-1').optionFilter({
+              name: 'option-filter'
+        });
+        
+        $('.option-filter-example-2').optionFilter({
+              name: 'option-filter'
+        });
+
+      });
+    </script>   
+  </body>
+</html>
