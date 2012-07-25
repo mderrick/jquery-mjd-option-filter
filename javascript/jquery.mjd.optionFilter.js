@@ -14,7 +14,7 @@
 	"use strict";
 	var instances = 0;
 		
-	$.widget("ctg.optionFilter", {
+	$.widget("mjd.optionFilter", {
 
 		options: {
 			name: 'option-filter',

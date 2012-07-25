@@ -47,7 +47,7 @@ A relationship must be defined for each option through the use of multiple class
 For example: "Mayfair" in Select list "City" is related to "United Kingdom" and "Greater London" so uses the classes: "United-Kingdom Greater-London" in this specific order.
 
 ### Options
-#### name: 'option-filter' (string, number)
+#### name: 'option-filter' (string)
 Defines the name of the plugin in order to change class names used in markup.
 
 ### Callbacks
@@ -66,4 +66,4 @@ Defines the name of the plugin in order to change class names used in markup.
 Callback function to do something before the options are replaced.
 
 #### afterChange: null (function)
-Callback function to do something before the options are replaced.
+Callback function to do something after the options are replaced.
